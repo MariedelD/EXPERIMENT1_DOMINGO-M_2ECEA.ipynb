@@ -1,141 +1,97 @@
 # EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING
 
-## I. Intended Learning Outcomes
-
-#### 1. To identify the codes and functions incorporated in the Pandas library
-#### 2. To be able to apply and use the different codes and functions in creating a Python program using a Pandas library
-
-## II. Instructions
-
-### PROBLEM 1
-
-> [!IMPORTANT]
-> Save your file as Surname_Pandas-P1.py
-> 
-#### $\color{Apricot}{Using\ knowledge\ obtained\ from\ the\ experiment\ and\ demonstrations\ :}$ 
-
-#### a. Load the corresponding .csv file into a data frama named cars using pandas.
-* The following .csv file can be downloaded [here](http://bit.ly/Cars_file)
-  > NOTE: 
-  >   Ensure that the following file is saved in the same directory as your Jupyter notebook so that the notebook can locate it.
-#### b. Display the first five and last five rows of the resulting cars.
-
-### PROBLEM 2
-
-> [!IMPORTANT]
-> Save your file as Surname_Pandas-P2.py
-> 
-#### $\color{Apricot}{Using\ the\ dataframe\ cars\ in\ problem\ 1\ ,\ extract\ the\ following\ information\ using\ subsetting\ ,\ slicing\ ,\ and\ indexing\ operations. }$  
-#### a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7...) of cars.
-#### b. Display the row that contains the ‘Model’ of ‘Mazda RX4’.
-#### c. How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
-#### d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
-
-## III. Solutions
-
-### Problem 1: 
-
-* Using this **_import convention_** allows access to the Pandas library, which will be utilized throughout the entire program.
-```python
-import pandas as pd
-```
-
-* After accessing the Pandas Library, **_save the .csv file_** in the same directory as your Jupyter notebook to ensure that the notebook can locate it.
-```python
-cars = pd.read_csv('cars.csv')
-cars
-```
-* By using the **_pd.read_csv() function_**, the file will be located and its dataset stored in the variable cars.
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/3d9eb492-f3bc-479b-8986-d69611cdeeb2)
-
----
-
-* To display only the first five rows from the dataset stored in cars, employ **_.head() function_**.
-```python
-cars.head()
-```
-
-* **_.head() function_** is used to return a specified number of rows, string from the top. 
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/aba5bbd6-7bf7-45c1-9e0a-1c18d696eba4)
-
----
-
-* To display the last five rows from the dataset stored in cars, utilize **_.tail() function_**.
-```python
-cars.tail()
-```
-
-* Difference from .head function, **_.tail() function_** returns a specified number of last rows.
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/aa4061db-0621-4600-b938-875ac138cfc2)
-
-### Problem 2:
-
-* Utilize slicing to display the first five odd-numbered columns of cars by specifying column indices for slicing. Slicing helps identify these columns, and the default syntax for slicing is as follows:
-```python
-cars.loc[0:4,::2]
-```
-* Wherein:
-```python
-cars.loc[range of index,iteration]
-```
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/b5b79003-4717-42d9-b1de-9ce09e86eaaf)
-
----
-
-* To determine the Row that contains the Model of Mazda RX4, utilize the **_.loc function_** .
-```python
-cars.loc[cars['Model'] == 'Mazda RX4']
-```
-* By utilizing .loc function, this will locate at all rows from the cars Dataset where the value in the 'Model' column is equal to 'Mazda RX4
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/cadbedb8-e573-4f33-ae70-58b1d98a2be5)
-
----
-
-* To count the number of cylinders (‘cyl’) does the car model ‘Camaro Z28’ have, utilize **_.loc function_**.
-```python
-cars.loc[cars['Model'] == 'Camaro Z28', ['Model','cyl']]
-```
-* This function will select all rows from the cars dataset where the value in the 'Model' column is 'Mazda RX4' and will display only the 'Model' name and the number of cylinders ('cyl').
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/121c045e-89cc-49bb-b57e-e650881bb45b)
-
----
-
-* To determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models have, utilizing the following function:
-```python
-cars.loc[(cars['Model'] == 'Mazda RX4 Wag') |
-         (cars['Model'] == 'Ford Pantera L')|
-         (cars['Model'] == 'Honda Civic') ,['Model','cyl','gear']]
-```
-* This code locates the 'Model', 'cyl', and 'gear' columns from the cars Dataset for rows where the 'Model' is 'Mazda RX4 Wag', 'Ford Pantera L', and 'Honda Civic'
-
-#### OUTPUT:
-![image](https://github.com/user-attachments/assets/500023a4-78bd-4256-9fe8-26d8f4e8e2cb)
-
-
-## IV. AUTHOR
-
-#### Submitted By: DOMINGO, Mariedel O.  
-#### Section: 2ECE-A
-
-## V. Version History
-
-#### 1.00
+# EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING
+# I. Intended Learning Outcomes
+### In this experiment, the primary objective is 
+### In this experiment, the primary objective is to understand and apply basic codes and functions in Python programming for developing functional Python programs.
+# II. Instructions
+## Problem 1: 
+###gksgklj
+## Problem 2: 
+### jfkajf
+## Problem 1: ALPHABET SOUP PROBLEM
+### Create a function that takes a string and returns a string with its letters in alphabetical order.
+## Problem 2: EMOTICON PROBLEM
+### Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticon:
+| Word          | Emoticon      | 
+| ------------- |:-------------:| 
+| Smile         |       :)      | 
+| Grin          |       :D      |  
+| Sad           |       :((     | 
+| Mad           |      >:(      | 
+## Problem 3: UNPACKING LIST PROBLEM
+### Unpack the list writeyourcodehere into three variables, being first, middle, and last, with middle being everything in between the first and last element. Then print all three variables.
+# III. Solution
+## Problem 1: 
+### jfkksjdf
+## Problem 1: ALPHABET SOUP PROBLEM
+### In Problem 1, the objective is to sort a string alphabetically. To achieve this, string functions are used to read the word input by the user, and then this word will be sorted. The def sort_string function is then defined to arrange the input characters in alphabetical order, with ''.join() used to combine these sorted characters into a single string. The return statement marks the end of the function and provides the sorted string as output. Finally, the print function displays the original and the alphabetically sorted word.
+###
+### In summary, the required outcomes are as follows:
+#### 1. 
+#### 2.
+#### 3. 
+#### 4. 
+_In summary, the required outcomes are as follows:_
+#### 1. A function that takes a string as input.
+#### 2. A function that will sort the word in alphabetical order.
+#### 3. Display the original input and the sorted string to the user.
+###
+### CODE:
+![image](https://github.com/user-attachments/assets/9adb9c9f-a0b3-4343-b5dd-558d9ef6420d)
+###
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/ef55468e-0cf4-4812-928e-4db21c6d5b7b)
+## Problem 2:
+### In Problem 2,
+## Problem 2: EMOTICON PROBLEM
+### For the Emoticon Problem, the task is to replace specific words with corresponding emoticons. The code uses string functions to process the sentence that the user input. By defining a function with def and utilizing the .replace(), the function substitutes the specified words in the parentheses with their corresponding emoticons. Finally, the print function is used to display both the original sentence and the modified sentence with the words replaced by emoticons.
+###
+### In summary, the required outcomes are as follows:
+#### 1. 
+#### 2. 
+#### 3. 
+_In summary, the required outcomes are as follows:_
+#### 1. Allow the user to enter a sentence.
+#### 2. A function that will replace the specific words into their corresponding emoticons.
+#### 3. Display the sentence with the replaced emoticons.
+###
+### CODE:
+![image](https://github.com/user-attachments/assets/e44c54a2-4efc-4477-912d-3978a25bfd6a)
+###
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/8008c4c5-aa72-4ff3-b87e-b16b282d052e)
+## Problem 2: DIVISIBLE BY 3 PROBLEM
+## Problem 3:  UNPACKING LIST PROBLEM
+### klhfk
+_In summary, the required outcomes are as follows:_
+#### 1. Allow the user to input a list of numbers.
+#### 2. A function that will separate the list into First, Middle, & Last.
+#### 3. Display the First, Middle, & Last element of the list.
+###
+### CODE:
+![image](https://github.com/user-attachments/assets/4ab0bf43-2d9b-4e19-94ac-947a2cdbf8f2)
+###
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/917ca207-4f41-4877-b4ba-b2ed0707a61e)
+###
+IV. Version History
+# IV. AUTHOR
+### Submitted By: DOMINGO, Mariedel O.  
+### Section: 2ECE-A
+# V. Version History
+### 1.00
 * Created a repository
-#### 1.01
-* Uploaded the supplemental files
-#### 1.02
-* Created a README File
+### 1.01
+* Uploaded the file in an incorrect format
+* Without README File
+### 1.02
+* Deleted the Files with incorrect format
+* Re-upload the file in the correct format
+### 1.03
+* Created the README File
+### 1.04
+* Revised the README file
 
   
 
