@@ -1,6 +1,5 @@
 # EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING
 # I. Intended Learning Outcomes
-### In this experiment, the primary objective is 
 ### In this experiment, the primary objective is to understand and apply basic codes and functions in Python programming for developing functional Python programs.
 # II. Instructions
 ## Problem 1: 
